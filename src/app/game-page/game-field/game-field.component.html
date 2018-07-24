@@ -1,0 +1,11 @@
+<div
+    class="game-field"
+    gmCardDrop
+>
+    <gm-card
+        class="card"
+        *ngIf="gameSerivce.dropCard"
+        [card]="gameSerivce.dropCard.data"
+        [enableDrag]="false"
+    ></gm-card>
+</div>

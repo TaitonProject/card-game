@@ -1,0 +1,8 @@
+<div class="card-deck">
+    <div *ngFor="let card of cards">
+        <gm-card
+            [card]="card"
+            [enableDrag]="enableDrag"
+        ></gm-card>
+    </div>
+</div>
