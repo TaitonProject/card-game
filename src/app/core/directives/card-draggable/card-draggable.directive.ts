@@ -26,10 +26,7 @@ export class CardDraggableDirective implements AfterViewInit, OnChanges {
 
   onDragStart = (event: any) => {
     if (this.enable) {
-      console.log('event', event);
       this._gameService.dragCard = <Dnd<Card>>{ target: event.target, data: this.data };
-      // event.dataTransfer.setData('text', '12');
-      console.log('drag start!');
     }
   }
 }
